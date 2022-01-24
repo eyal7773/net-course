@@ -88,3 +88,18 @@ section > div {
     background-image: url("./bg2.jpg");
     /* cursor: pointer; */
 }
+
+a {
+    text-decoration: none;
+}
+.general {
+    color:blue;
+    background-color: wheat;
+    font-size: larger;
+    /* text-decoration:line-through; */
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    text-shadow:bisque;
+
+}
