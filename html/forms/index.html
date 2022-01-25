@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טפסים</title>
+
+    
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <style>
+        #lastNameDiv {
+            /*background-image:"./assets/img/a.jfif";*/
+            font-size: 20px;
+            color: white
+        }
+        .class1.class2 {
+            background-color: goldenrod;
+        }
+        .class3 .class4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            color:white;
+        }
+        /*
+        .class1.class2	.name1.name2	Selects all elements with both name1 and name2 set within its class attribute
+.class1 .class2	.name1 .name2	Selects all elements with name2 that is a descendant of an element with name1
+  */     
+    </style>
+</head>
+
+<body >
+    <h1>טפסים</h1>
+    <div class="class3">
+        <div class="class4">
+            סתם מלל
+        </div>
+    </div>
+
+    <!-- כאן תבוא הערה -->
+    <p>
+        לחץ על הקישור הבא כדי לעבור לקובץ בתיקיה אחרת
+        <a  class="kishurim specialLinks" href="./otherFolder/some-file.html">זה הקישור</a>
+    </p>
+    <form action="./target.html" method="get">
+        <div style="background: yellowgreen;border:1px solid salmon;">
+            <label>
+                שם פרטי
+                <input type="text" name="firstName" id="firstName" placeholder="שם פרטי">
+            </label>
+        </div>
+        <div id="lastNameDiv">
+            <label>
+                שם משפחה
+                <input type="text" name="lastName" id="lastName">
+            </label>
+        </div>
+        <div class="class1 class2">
+            <label>
+                תאריך לידה
+                <input type="date" name="birthDate" id="birthDate"  min="2017-04-01" max="2017-04-30">
+            </label>
+        </div>
+        <div>  
+            <label>
+                צבע עיניים:
+                <input type="color" name="eyesColor" id="eyesColor">
+            </label>
+        </div>
+        <div class="kishurim">
+            <label for="agree">
+                אני מסכים לתנאים
+                <input type="checkbox" name="agree" id="agree" checked="checked" >
+            </label>
+        </div>
+        <div>
+            <label for="male">
+                זכר
+                <input type="radio" name="sex" id="male" value="male">
+            </label>
+        </div>
+        <div>
+            <label for="female">
+                נקבה
+                <input type="radio" name="sex" id="female" value="female">
+               
+            </label>
+        </div>
+        <div>
+            <label for="shirt-size">
+                <select name="shirt-size" id="shirt-size">
+                    <option value="L">Large</option>
+                    <option value="M">Medium</option>
+                    <option value="S">Small</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="">
+                אימייל
+                <input type="email" name="email">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                גיל
+                <input type="number" name="age" id="">
+            </label>
+        </div>
+        <div>
+            <label for="">
+              טלפון
+                <input type="tel" name="tel" id="">
+            </label>
+        </div>
+
+        <div>
+            <button type="submit">שלח</button>
+            <button type="reset">אפס טופס</button>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
