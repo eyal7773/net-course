@@ -1,0 +1,23 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+.container > div {
+    flex:1 ; /* shoutcut for : flex-basis flex-grow flex-shrink */
+           /*                בסיס        
+                                            איך לגדול
+                                                    איך להתכווץ */        
+}
+
+.home {
+    
+    
+}
+.search {
+    
+    
+}
+.logout {
+    
+}

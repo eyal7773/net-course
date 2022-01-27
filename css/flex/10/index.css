@@ -1,0 +1,22 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    
+}
+
+.container > div {
+    
+}
+
+.home {
+    flex-basis: 200px; /* מאיזה גודל בסיס להתחיל ?*/
+    flex-grow: 1;
+}
+.search {
+    
+    
+}
+.logout {
+    flex-basis: 200px;
+    flex-grow: 1;
+}

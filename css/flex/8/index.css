@@ -1,0 +1,22 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.container > div {
+    
+}
+
+.home {
+    align-self: flex-start;
+    
+}
+.search {
+    
+    
+}
+.logout {
+    align-self: flex-end;
+}

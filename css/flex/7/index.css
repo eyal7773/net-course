@@ -1,0 +1,24 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > div {
+    
+}
+
+.home {
+    
+    
+}
+.search {
+    
+    
+}
+.logout {
+}
