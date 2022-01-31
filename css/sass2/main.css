@@ -1,0 +1,91 @@
+footer {
+  border: 1px solid orange;
+  background-color: yellowgreen;
+  border-radius: 3px;
+}
+
+/*********How to use the Colors **********/
+body {
+  background-color: white;
+}
+
+.cls1 {
+  color: blue;
+}
+
+a {
+  color: blue;
+}
+
+.posts {
+  background: rgba(172, 216, 245, 0.9);
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.posts .blogs {
+  margin-bottom: 2em;
+}
+
+.posts .header {
+  color: #333;
+}
+
+.posts .author {
+  color: #333;
+}
+
+.posts .content {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.posts .content a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+button, .cta {
+  font-size: 1.3rem;
+  font-family: serif;
+  background-color: maroon;
+  color: #fff;
+  margin: 20px;
+}
+
+.cta {
+  border: 5px solid green;
+}
+
+.boxm1 {
+  width: 200px;
+  height: 100px;
+  background-color: magenta;
+  border: 2px solid #000;
+  margin: 20px;
+  padding: 20px;
+  font-family: Satisfy;
+}
+
+.boxm2 {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border: 2px solid #000;
+  margin: 20px;
+  padding: 20px;
+  font-family: Satisfy;
+}
+
+.boxm3 {
+  width: 200px;
+  height: 200px;
+  background-color: silver;
+  border: 2px solid #000;
+  margin: 20px;
+  padding: 20px;
+  font-family: Satisfy;
+}
+/*# sourceMappingURL=main.css.map */

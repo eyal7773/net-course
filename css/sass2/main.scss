@@ -1,0 +1,87 @@
+@import "footer";
+
+$brightRed: #f00;
+$mediumRed: blue;
+$black: #000;
+$darkGrey: #333;
+$lightGrey: #ccc;
+
+/*********How to use the Colors **********/
+$defaultLinkColor: $mediumRed;
+$headerTitleColor: $brightRed;
+$linkRolloverColor: $black;
+$pageTitleColor: $mediumRed;
+$bodyFontColor: $darkGrey;
+$footerFontColor: $lightGrey;
+
+body {
+    background-color: white; // bla bla bla
+}
+.cls1 {
+    color:$mediumRed;
+}
+
+a {
+    color: $defaultLinkColor;   
+}
+
+.posts {
+
+    background: rgba(172, 216, 245, 0.9);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  
+    .blogs {
+        margin-bottom: 2em;
+      }
+  
+    .header {
+        color: #333;
+      }
+  
+    .author {
+        color: #333;
+      }
+  
+      .content {
+        font-size: 1.2em;
+        color: #444;
+  
+        a:hover {
+          text-decoration: none;
+          color: green;
+        }
+      }
+    }
+
+    button {
+        font-size:1.3rem;
+        font-family: serif;
+        background-color: maroon;
+        color: #fff;
+        margin: 20px;
+      }
+.cta {
+@extend button;
+border:5px solid green;
+}
+
+@mixin box($width:100px, $height:100px, $bgc:aqua) {
+    width: $width;
+    height: $height;
+    background-color: $bgc;
+    border: 2px solid #000;
+    margin: 20px;
+    padding: 20px;
+    font-family: Satisfy;
+  }
+  .boxm1 {
+    @include box(200px, 100px, magenta);
+  }
+  .boxm2 {
+    @include box(50px,50px);
+  }
+  .boxm3 {
+    @include box(200px, 200px, silver);
+  }
