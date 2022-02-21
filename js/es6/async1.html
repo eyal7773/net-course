@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // קראתי לשרת והוא מחזיר תשובה רק אחרי 3 שניות
+        var serverResult;
+        setTimeout( () => {
+            console.log('timer finished!');
+            serverResult = { success:true};
+        },3000);
+        
+        console.log("script started", serverResult);   
+    </script>
+</head>
+<body>
+    <h1>async - 1</h1>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>callbacks demo</title>
+</head>
+
+<body>
+    <div id="posts-content"></div>
+
+    <script>
+        const posts = [{
+            title: 'Post 1 demo title'
+        },
+        {
+            title: 'Post 2 demo title'
+        }
+        ];
+
+        const renderPosts = () => {
+            posts.forEach(post => {
+                document.getElementById('posts-content').innerHTML += '<h3>' + post.title + '</h3>';
+            });
+        };
+
+        const createPost = (post, callback1) => {
+            setTimeout(() => {
+
+                posts.push(post);
+                // קורא למה שיתרחש בעתיד = כלומר רפנרס לפונקציה מסויימת
+                callback1();
+            }, 3000);
+        };
+        
+        createPost({ title: 'Post 3 demo' }, renderPosts);
+    </script>
+
+</body>
+
+</html>

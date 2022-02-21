@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body >
+    <div id="posts">
+
+    </div>
+
+
+<script>
+        const posts = [
+            {
+                title: 'Post 1 demo title'
+            },
+            {
+                    title: 'Post 2 demo title'
+            }
+        ];
+
+        const createPost = post => {
+            setTimeout(() => {
+                posts.push(post);
+            }, 3000);
+        };
+
+        createPost({
+            title: 'Post 3 demo'
+        });
+
+        const renderPosts = () => {
+            posts.forEach(post => {
+                document.getElementById('posts').innerHTML += '<h3>' + post.title + '</h3>';
+            });
+        };
+
+        renderPosts();
+
+    </script>
+
+
+</body>
+
+</html>

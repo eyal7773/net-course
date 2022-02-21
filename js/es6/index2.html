@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        let solution = 1+1;
+        let myString = `1 + 1 = ${solution}`;
+
+        let someObject = {
+            a:1,
+            b:2
+        };
+        // לרוץ על המפתחות
+        for (const k in someObject) {
+            console.log('key = ',k, ' value is = ', someObject[k]);
+        }
+        // לרוץ על מערך
+        // כמו foreach c#
+        const myAry_1 = [ 1,2,3,4,5 ];
+        const myAry_2 = [ 6,7,8,9,10 ];
+        let newAry_3 = [];
+        for (const i of myAry_1) {
+            console.log(i);
+            newAry_3.push(i);
+        }
+        console.log('newAry_3',newAry_3);
+
+        // const data =  [...myAry_1,...myAry_2];
+        // console.log('data',data);
+        
+        // const [myFirstElement, my2ndElement,,,mySomeElement] = data;
+        
+        
+        // console.log('myFirstElement',myFirstElement);
+        // console.log('mySeconedElement',my2ndElement);
+        // console.log('mySomeElement',mySomeElement);
+
+
+        // let obj = {
+        //     a:1,
+        //     b:2,
+        //     c:3
+        // };
+        // // obj.a obj.b
+        // const { a: myA, c } = obj;
+        // console.log("myA",myA);
+        // console.log("c",c);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

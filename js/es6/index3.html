@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let israelCitizen = {
+            name: 'Moshe',
+            id: 1234565,
+            address: {
+                street: 'Byalik',
+                houseNum: 50,
+                city: 'Nes Ziona'
+            }
+        };
+
+        let copyOfCitizen = {...israelCitizen,
+                                address: {...israelCitizen.address, knisa:'A'}
+                            };
+        console.log('copyOfCitizen',copyOfCitizen);
+        israelCitizen.address.street = 'Lochami Ha-Getaot';
+        israelCitizen.name = "Avi";
+        console.log('copyOfCitizen.address.street',copyOfCitizen.address.street);
+        console.log('israelCitizen.name',israelCitizen.name);
+        console.log('copyOfCitizen.name',copyOfCitizen.name);
+
+        let s = [1,2,3,4,5];
+        let newS = s.filter(x => x < 3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        class Person {
+            constructor(address) {
+                this.address = address;
+            }
+            name = 'Eyal';
+            getAge = () => 41;
+            justOtherMethod( { first,last } ) { // { first, last } = obj
+                console.log('first',first);
+                console.log('last',last);
+            }
+            static STATIC_METHOD() {
+                console.log('this is static');
+            }
+        }
+        class SpecialPerson extends Person {
+            constructor()  {
+                super("Some Address");
+            }
+            special = true;
+        }
+        Person.STATIC_METHOD();
+        var a = new Person("Baka Al Jarbia");
+        let obj = {
+            first: 'bla1',
+            last: 'bla2',
+            a:1,
+            b:2
+        }
+        // const {first,last} = obj;
+        a.justOtherMethod(obj);
+        console.log(a);
+        let special = new SpecialPerson();
+        console.log('special person', special);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
