@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       var Game = function(){};
+       
+       Game.prototype.start = false;
+       Game.prototype.play = function(){
+         console.log( 'play run' );
+       };
+        
+       var CarsGame = function(){};
+
+      // כאן מתרחשת הירושה = הקישור לפרוטייפ של האבא  
+       CarsGame.prototype = Object.create(Game.prototype);
+       // מוסיף דברים חדשים
+       CarsGame.prototype.speed = 110;
+       CarsGame.prototype.drive = function(){
+         console.log( 'Car is now driving' );
+       };
+        
+       var game1 = new CarsGame();
+  
+       // output false
+       console.log( game1.start ); 
+  
+       // output play run
+       game1.play(); 
+  
+       // output 110
+       console.log( game1.speed ); 
+  
+       // output Car is now driving
+       game1.drive(); 
+    </script>
+</head>
+<body>
+    <h1>ירושה - בן מוסיף</h1>
+</body>
+</html>

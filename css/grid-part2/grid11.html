@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            height: 300px;
+            gap:3px;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 20px auto auto 20px;
+            grid-template-areas: 
+                                  "m m m ."
+                                  "a a a s"
+                                  "a a a s"
+                                  "f f f s";
+        }
+        .menu {
+            grid-area: m;
+            background-color: blueviolet;
+        }
+         .article {
+            grid-area: a;
+            background-color: aqua;
+        }
+        .sidebar {
+            grid-area: s;
+            background-color: coral;
+        }
+        .footer {
+            grid-area: f;
+            background-color: darkgrey;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">MENU</div>
+        <div class="article">ARTICLE</div>
+        <div class="sidebar">SIDE BAR</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>

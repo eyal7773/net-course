@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js"></script>
+    <script>
+        //console.log("hello js");
+        //alert("Hello World!");
+       // document.write("<h4>Hi Classroom!</h4>");
+    </script>
+    <style>
+        #e2 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <!-- <p id="e1">My First Name</p>
+    <p id="e2">My Last Name</p>
+    <p class="cls1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique est quasi illum rerum, doloremque ratione odio distinctio neque quo provident voluptatum earum deserunt accusantium a animi modi alias harum ducimus!</p>
+    <p class="cls1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique est quasi illum rerum, doloremque ratione odio distinctio neque quo provident voluptatum earum deserunt accusantium a animi modi alias harum ducimus!</p>
+     -->
+<h2>Enter your favorite color:</h2>
+<input id="id_input" type="text" oninput="kokoMokoJumbo()" >
+<br>
+<button onClick="kokoMokoJumbo()">Change color</button>
+        
+    
+         <h2>Choose the font color:</h2>
+         <select id="id_select" onchange="onChangeFont()" >
+             <option value="red">red</option>
+             <option value="green">green</option>
+             <option value="yellow">yellow</option>
+         </select>
+         <button onClick="onChangeFont()">Change font</button>
+
+         nnnn.i();
+        
+        
+<script>
+        function onChangeFont(){
+document.body.style.color = document.getElementById("id_select").value
+            }
+    function kokoMokoJumbo(){
+        document.body.style.background = document.getElementById("id_input").value
+    }
+</script>
+
+    <script>
+        // document.getElementById("e1").innerText = "<strong>Eyal</strong>";
+        // document.getElementById("e2").innerHTML = "<strong class=\"bubukkoko\">Bardugo</strong>";
+        // document.getElementById("e2").style.backgroundColor ="yellow";    // .color = "red";
+        // console.log("the p element",document.getElementById("e2"));
+        // console.log(document.querySelectorAll(".cls1"));
+    </script>
+</body>
+</html>

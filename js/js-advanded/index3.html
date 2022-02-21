@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function Person() { }
+
+        Person.prototype.name = 'Avi';
+        Person.prototype.age = 25;
+        Person.prototype.getDetails = function () {
+            return 'getDetails method run!';
+        };
+
+        function UsaPerson() { 
+            
+        }
+        // כאן מתבצעת הירושה
+        UsaPerson.prototype = Object.create(Person.prototype);
+
+        UsaPerson.prototype.name = 'Moshe';
+        UsaPerson.prototype.getDetails = function () {
+            return 'Name: ' + this.name + ' Age: ' + this.age;
+        };
+
+        var ob = new UsaPerson();
+        var output = ob.getDetails();
+
+        // output Name: moshe Age: 25
+        console.log(output);
+
+        var regularPerson = new Person();
+        console.log(regularPerson.getDetails());
+
+        
+
+    </script>
+</head>
+
+<body>
+    <h1>overide</h1>
+</body>
+
+</html>

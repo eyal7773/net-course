@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /*
+auto פירושו 'לקחת כל ערך שיש למאפיין grid
+-auto-rows', שהוא כברירת מחדל אוטומטי גם כן
+, במקרה זה פירושו להיות בגודל בהתאם לתוכן...
+ אבל מסלולים יכולים גם להימתח במידת הצורך
+  כדי להתאים לגודל של תוכן בעמודות אחרות
+https://stackoverflow.com/questions/49145552/how-is-grid-template-rows-auto-auto-1fr-auto-interpreted/56149220
+            */
+            background-color: azure;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: whitesmoke;
+            border: 1px solid blue;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- זהו אלמנט האב-->
+    <!--- המיכל שמוגדר בתור גריד -->
+    <div class="grid-container">
+        <!-- ואלו הילדים שלו-->
+        <!-- המשבצות בגריד-->
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+
+
+/******* SASS VARIABLES ****/
+$baseColor: rgba(116, 25, 221, 0.438);
+
+body {
+    background-color: $baseColor;
+}
+
+/** You can use variables inside other variables */
+/**** Site Colors******/
+$brightRed: #f00;
+$mediumRed: #c00;
+$black: #000;
+$darkGrey: #333;
+$lightGrey: #ccc;
+
+// /*********How to use the Colors **********/
+$defaultLinkColor: $mediumRed;
+$headerTitleColor: $brightRed;
+$linkRolloverColor: $black;
+$pageTitleColor: $mediumRed;
+$bodyFontColor: $darkGrey;
+$footerFontColor: $lightGrey;
